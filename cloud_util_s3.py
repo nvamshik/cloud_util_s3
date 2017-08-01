@@ -1,27 +1,29 @@
 import boto3
+import os
+import logging
+
+logging.basicConfig(
+    filename="log1.log",
+    level=10,
+    format="%(asctime)s:%(levelno)s:%(message)s"
+)
+
 
 def main():
+  s3_upload("C:/Users/vamshi/Desktop/wordpress.txt","cc-sample-bucket","test333.txt")
+  file_validation("C:/Users/vamshi/Desktop/wordpress.txt")
 
 
+def file_validation(path):
+    status = os.path.isfile(path)
+    logging.debug(status)
 
- """   s3_upload("C:/Users/vamshi/Desktop/wordpress.txt")
-   s3_bucket("cc-sample-bucket")
-   s3_key("wordpress.txt")
 
-def s3_upload(template_file):
-    f = open(template_file)
-    template_file = f.read()
+def s3_upload(template_file, bucket_name, key_name):
+    s3_client.upload_file(template_file, bucket_name, key_name)
 
-def s3_bucket(bucket_name):
-    with open(bucket_name) as v:
-        bucket = v.read()
-
-def s3_key(key_name):
-    with open(key_name) as r:
-        bucket = r.read()"""
 
 s3_client = boto3.client("s3")
-s3_client.upload_file("C:/Users/vamshi/Desktop/wordpress.txt", "cc-sample-bucket", "wordpress.txt")
 
 if __name__ == "__main__":
     main()
