@@ -1,0 +1,344 @@
+2017-08-01 01:36:15,397:10:Looking for credentials via: env
+2017-08-01 01:36:15,397:10:Looking for credentials via: assume-role
+2017-08-01 01:36:15,397:10:Looking for credentials via: shared-credentials-file
+2017-08-01 01:36:15,397:20:Found credentials in shared credentials file: ~/.aws/credentials
+2017-08-01 01:36:15,413:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\endpoints.json
+2017-08-01 01:36:15,601:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\s3\2006-03-01\service-2.json
+2017-08-01 01:36:15,641:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\_retry.json
+2017-08-01 01:36:15,641:10:Registering retry handlers for service: s3
+2017-08-01 01:36:15,657:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x041B5FA8>
+2017-08-01 01:36:15,657:10:Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0150AF18>
+2017-08-01 01:36:16,141:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x041B5E88>
+2017-08-01 01:36:16,141:10:The s3 config key is not a dictionary type, ignoring its value of: None
+2017-08-01 01:36:16,149:10:Setting s3 timeout as (60, 60)
+2017-08-01 01:36:16,149:10:Defaulting to S3 virtual host style addressing with path style addressing fallback.
+2017-08-01 01:36:16,149:10:Acquiring 0
+2017-08-01 01:36:16,165:10:UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x04459350>}) about to wait for the following futures []
+2017-08-01 01:36:16,165:10:UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x04459350>}) done waiting for dependent futures
+2017-08-01 01:36:16,165:10:Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x04459350>}) with kwargs {'client': <botocore.client.S3 object at 0x04384930>, 'config': <boto3.s3.transfer.TransferConfig object at 0x04432CF0>, 'osutil': <s3transfer.utils.OSUtils object at 0x04432C50>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x04432F10>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x04459350>}
+2017-08-01 01:36:16,165:10:Submitting task PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x04432F10> for transfer request: 0.
+2017-08-01 01:36:16,165:10:Acquiring 0
+2017-08-01 01:36:16,165:10:PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) about to wait for the following futures []
+2017-08-01 01:36:16,165:10:Releasing acquire 0/None
+2017-08-01 01:36:16,165:10:PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) done waiting for dependent futures
+2017-08-01 01:36:16,165:10:Executing task PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x04384930>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x044594F0>, 'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}
+2017-08-01 01:36:16,165:10:Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x041F2F60>
+2017-08-01 01:36:16,165:10:Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x041F2930>
+2017-08-01 01:36:16,165:10:Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x041F6348>
+2017-08-01 01:36:16,165:10:Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x041F28E8>
+2017-08-01 01:36:16,165:10:Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x04432C90>>
+2017-08-01 01:36:16,165:10:Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x041F26F0>
+2017-08-01 01:36:16,165:10:Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x041F28A0>
+2017-08-01 01:36:16,196:10:Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x041F2B70>
+2017-08-01 01:36:16,196:10:Adding expect 100 continue header to request.
+2017-08-01 01:36:16,196:10:Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x04432C90>>
+2017-08-01 01:36:16,196:10:Making request for OperationModel(name=PutObject) (verify_ssl=True) with params: {'url_path': '/cc-sample-bucket/test333.txt', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.4.4 Python/3.6.1 Windows/8.1 Botocore/1.5.54', 'Content-MD5': 'LAYelOMTvPlKdMEh14wMsg==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x044594F0>, 'url': 'https://s3.amazonaws.com/cc-sample-bucket/test333.txt', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x04384870>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'cc-sample-bucket'}}}
+2017-08-01 01:36:16,196:10:Event request-created.s3.PutObject: calling handler <function disable_upload_callbacks at 0x043F8CD8>
+2017-08-01 01:36:16,196:10:Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x04384BD0>>
+2017-08-01 01:36:16,196:10:Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x041F2660>
+2017-08-01 01:36:16,196:10:Event before-sign.s3.PutObject: calling handler <function fix_s3_host at 0x040E7030>
+2017-08-01 01:36:16,196:10:Checking for DNS compatible bucket for: https://s3.amazonaws.com/cc-sample-bucket/test333.txt
+2017-08-01 01:36:16,196:10:URI updated to: https://cc-sample-bucket.s3.amazonaws.com/test333.txt
+2017-08-01 01:36:16,196:10:Calculating signature using hmacv1 auth.
+2017-08-01 01:36:16,196:10:HTTP request method: PUT
+2017-08-01 01:36:16,196:10:StringToSign:
+PUT
+LAYelOMTvPlKdMEh14wMsg==
+
+Tue, 01 Aug 2017 06:36:16 GMT
+/cc-sample-bucket/test333.txt
+2017-08-01 01:36:16,243:10:Event request-created.s3.PutObject: calling handler <function enable_upload_callbacks at 0x043F8D20>
+2017-08-01 01:36:16,399:10:Sending http request: <PreparedRequest [PUT]>
+2017-08-01 01:36:16,399:20:Starting new HTTPS connection (1): cc-sample-bucket.s3.amazonaws.com
+2017-08-01 01:36:17,937:10:Waiting for 100 Continue response.
+2017-08-01 01:36:18,031:10:100 Continue response seen, now sending request body.
+2017-08-01 01:36:18,109:10:"PUT /test333.txt HTTP/1.1" 200 0
+2017-08-01 01:36:18,109:10:Response headers: {'x-amz-id-2': 'ugmTRWLoJPFtvK7H5S64/Ofljbtfid407XRprR0X+EUsTIA5UEcyMYdf9/fMAqdmBkiqwta+7dM=', 'x-amz-request-id': 'F2D0E8CBB0B3B14E', 'date': 'Tue, 01 Aug 2017 06:36:20 GMT', 'etag': '"2c061e94e313bcf94a74c121d78c0cb2"', 'content-length': '0', 'server': 'AmazonS3'}
+2017-08-01 01:36:18,109:10:Response body:
+b''
+2017-08-01 01:36:18,125:10:Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0436CB90>
+2017-08-01 01:36:18,125:10:No retry needed.
+2017-08-01 01:36:18,125:10:Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x04432C90>>
+2017-08-01 01:36:18,125:10:Releasing acquire 0/None
+2017-08-01 01:36:18,125:10:True
+2017-08-01 01:38:32,366:10:Looking for credentials via: env
+2017-08-01 01:38:32,366:10:Looking for credentials via: assume-role
+2017-08-01 01:38:32,366:10:Looking for credentials via: shared-credentials-file
+2017-08-01 01:38:32,366:20:Found credentials in shared credentials file: ~/.aws/credentials
+2017-08-01 01:38:32,366:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\endpoints.json
+2017-08-01 01:38:32,398:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\s3\2006-03-01\service-2.json
+2017-08-01 01:38:32,398:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\_retry.json
+2017-08-01 01:38:32,398:10:Registering retry handlers for service: s3
+2017-08-01 01:38:32,413:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x037A0030>
+2017-08-01 01:38:32,413:10:Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x00AEAF18>
+2017-08-01 01:38:32,429:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x03786ED0>
+2017-08-01 01:38:32,429:10:The s3 config key is not a dictionary type, ignoring its value of: None
+2017-08-01 01:38:32,429:10:Setting s3 timeout as (60, 60)
+2017-08-01 01:38:32,429:10:Defaulting to S3 virtual host style addressing with path style addressing fallback.
+2017-08-01 01:38:32,429:10:Acquiring 0
+2017-08-01 01:38:32,429:10:UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x03A29310>}) about to wait for the following futures []
+2017-08-01 01:38:32,429:10:UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x03A29310>}) done waiting for dependent futures
+2017-08-01 01:38:32,429:10:Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x03A29310>}) with kwargs {'client': <botocore.client.S3 object at 0x039548F0>, 'config': <boto3.s3.transfer.TransferConfig object at 0x03A02CB0>, 'osutil': <s3transfer.utils.OSUtils object at 0x03A02C10>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x03A02ED0>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x03A29310>}
+2017-08-01 01:38:32,429:10:Submitting task PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x03A02ED0> for transfer request: 0.
+2017-08-01 01:38:32,429:10:Acquiring 0
+2017-08-01 01:38:32,445:10:PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) about to wait for the following futures []
+2017-08-01 01:38:32,445:10:Releasing acquire 0/None
+2017-08-01 01:38:32,445:10:PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) done waiting for dependent futures
+2017-08-01 01:38:32,445:10:Executing task PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x039548F0>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x03A294B0>, 'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}
+2017-08-01 01:38:32,445:10:Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x037C2FA8>
+2017-08-01 01:38:32,445:10:Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x037C2978>
+2017-08-01 01:38:32,445:10:Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x037C6390>
+2017-08-01 01:38:32,445:10:Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x037C2930>
+2017-08-01 01:38:32,445:10:Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x03A02C50>>
+2017-08-01 01:38:32,445:10:Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x037C2738>
+2017-08-01 01:38:32,445:10:Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x037C28E8>
+2017-08-01 01:38:32,445:10:Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x037C2BB8>
+2017-08-01 01:38:32,445:10:Adding expect 100 continue header to request.
+2017-08-01 01:38:32,445:10:Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x03A02C50>>
+2017-08-01 01:38:32,445:10:Making request for OperationModel(name=PutObject) (verify_ssl=True) with params: {'url_path': '/cc-sample-bucket/test333.txt', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.4.4 Python/3.6.1 Windows/8.1 Botocore/1.5.54', 'Content-MD5': 'LAYelOMTvPlKdMEh14wMsg==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x03A294B0>, 'url': 'https://s3.amazonaws.com/cc-sample-bucket/test333.txt', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x03954830>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'cc-sample-bucket'}}}
+2017-08-01 01:38:32,445:10:Event request-created.s3.PutObject: calling handler <function disable_upload_callbacks at 0x039C8CD8>
+2017-08-01 01:38:32,445:10:Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x03954B90>>
+2017-08-01 01:38:32,445:10:Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x037C26A8>
+2017-08-01 01:38:32,445:10:Event before-sign.s3.PutObject: calling handler <function fix_s3_host at 0x036B7078>
+2017-08-01 01:38:32,445:10:Checking for DNS compatible bucket for: https://s3.amazonaws.com/cc-sample-bucket/test333.txt
+2017-08-01 01:38:32,445:10:URI updated to: https://cc-sample-bucket.s3.amazonaws.com/test333.txt
+2017-08-01 01:38:32,445:10:Calculating signature using hmacv1 auth.
+2017-08-01 01:38:32,445:10:HTTP request method: PUT
+2017-08-01 01:38:32,445:10:StringToSign:
+PUT
+LAYelOMTvPlKdMEh14wMsg==
+
+Tue, 01 Aug 2017 06:38:32 GMT
+/cc-sample-bucket/test333.txt
+2017-08-01 01:38:32,445:10:Event request-created.s3.PutObject: calling handler <function enable_upload_callbacks at 0x039C8D20>
+2017-08-01 01:38:32,445:10:Sending http request: <PreparedRequest [PUT]>
+2017-08-01 01:38:32,445:20:Starting new HTTPS connection (1): cc-sample-bucket.s3.amazonaws.com
+2017-08-01 01:38:33,246:10:Waiting for 100 Continue response.
+2017-08-01 01:38:33,340:10:100 Continue response seen, now sending request body.
+2017-08-01 01:38:33,434:10:"PUT /test333.txt HTTP/1.1" 200 0
+2017-08-01 01:38:33,434:10:Response headers: {'x-amz-id-2': '07QhhqqxM0Sb1DESoC5gobF2tCLTIL2ucDK/VK+2j2YWbBRbkwzLeCuoLp9qYTz7BhvHi1SSyig=', 'x-amz-request-id': 'BF2C988CBE5C5306', 'date': 'Tue, 01 Aug 2017 06:38:35 GMT', 'etag': '"2c061e94e313bcf94a74c121d78c0cb2"', 'content-length': '0', 'server': 'AmazonS3'}
+2017-08-01 01:38:33,434:10:Response body:
+b''
+2017-08-01 01:38:33,434:10:Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0393DB50>
+2017-08-01 01:38:33,434:10:No retry needed.
+2017-08-01 01:38:33,434:10:Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x03A02C50>>
+2017-08-01 01:38:33,434:10:Releasing acquire 0/None
+2017-08-01 01:38:33,434:10:True
+2017-08-01 01:47:06,339:10:Looking for credentials via: env
+2017-08-01 01:47:06,339:10:Looking for credentials via: assume-role
+2017-08-01 01:47:06,339:10:Looking for credentials via: shared-credentials-file
+2017-08-01 01:47:06,339:20:Found credentials in shared credentials file: ~/.aws/credentials
+2017-08-01 01:47:06,339:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\endpoints.json
+2017-08-01 01:47:06,370:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\s3\2006-03-01\service-2.json
+2017-08-01 01:47:06,370:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\_retry.json
+2017-08-01 01:47:06,370:10:Registering retry handlers for service: s3
+2017-08-01 01:47:06,386:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x03335FA8>
+2017-08-01 01:47:06,386:10:Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0295AF18>
+2017-08-01 01:47:06,402:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x03335E88>
+2017-08-01 01:47:06,402:10:The s3 config key is not a dictionary type, ignoring its value of: None
+2017-08-01 01:47:06,402:10:Setting s3 timeout as (60, 60)
+2017-08-01 01:47:06,417:10:Defaulting to S3 virtual host style addressing with path style addressing fallback.
+2017-08-01 01:47:06,417:10:Acquiring 0
+2017-08-01 01:47:06,417:10:UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x035D9370>}) about to wait for the following futures []
+2017-08-01 01:47:06,417:10:UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x035D9370>}) done waiting for dependent futures
+2017-08-01 01:47:06,417:10:Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x035D9370>}) with kwargs {'client': <botocore.client.S3 object at 0x03504950>, 'config': <boto3.s3.transfer.TransferConfig object at 0x035B2D10>, 'osutil': <s3transfer.utils.OSUtils object at 0x035B2C70>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x035B2F30>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x035D9370>}
+2017-08-01 01:47:06,417:10:Submitting task PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x035B2F30> for transfer request: 0.
+2017-08-01 01:47:06,417:10:Acquiring 0
+2017-08-01 01:47:06,417:10:PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) about to wait for the following futures []
+2017-08-01 01:47:06,417:10:Releasing acquire 0/None
+2017-08-01 01:47:06,417:10:PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) done waiting for dependent futures
+2017-08-01 01:47:06,417:10:Executing task PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x03504950>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x035D9510>, 'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}
+2017-08-01 01:47:06,417:10:Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x03372F60>
+2017-08-01 01:47:06,417:10:Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x03372930>
+2017-08-01 01:47:06,417:10:Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x03376348>
+2017-08-01 01:47:06,417:10:Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x033728E8>
+2017-08-01 01:47:06,417:10:Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x035B2CB0>>
+2017-08-01 01:47:06,417:10:Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x033726F0>
+2017-08-01 01:47:06,417:10:Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x033728A0>
+2017-08-01 01:47:06,417:10:Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x03372B70>
+2017-08-01 01:47:06,417:10:Adding expect 100 continue header to request.
+2017-08-01 01:47:06,417:10:Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x035B2CB0>>
+2017-08-01 01:47:06,417:10:Making request for OperationModel(name=PutObject) (verify_ssl=True) with params: {'url_path': '/cc-sample-bucket/test333.txt', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.4.4 Python/3.6.1 Windows/8.1 Botocore/1.5.54', 'Content-MD5': 'LAYelOMTvPlKdMEh14wMsg==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x035D9510>, 'url': 'https://s3.amazonaws.com/cc-sample-bucket/test333.txt', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x03504890>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'cc-sample-bucket'}}}
+2017-08-01 01:47:06,417:10:Event request-created.s3.PutObject: calling handler <function disable_upload_callbacks at 0x03578CD8>
+2017-08-01 01:47:06,417:10:Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x03504BF0>>
+2017-08-01 01:47:06,417:10:Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x03372660>
+2017-08-01 01:47:06,417:10:Event before-sign.s3.PutObject: calling handler <function fix_s3_host at 0x03267078>
+2017-08-01 01:47:06,417:10:Checking for DNS compatible bucket for: https://s3.amazonaws.com/cc-sample-bucket/test333.txt
+2017-08-01 01:47:06,417:10:URI updated to: https://cc-sample-bucket.s3.amazonaws.com/test333.txt
+2017-08-01 01:47:06,417:10:Calculating signature using hmacv1 auth.
+2017-08-01 01:47:06,417:10:HTTP request method: PUT
+2017-08-01 01:47:06,417:10:StringToSign:
+PUT
+LAYelOMTvPlKdMEh14wMsg==
+
+Tue, 01 Aug 2017 06:47:06 GMT
+/cc-sample-bucket/test333.txt
+2017-08-01 01:47:06,417:10:Event request-created.s3.PutObject: calling handler <function enable_upload_callbacks at 0x03578D20>
+2017-08-01 01:47:06,417:10:Sending http request: <PreparedRequest [PUT]>
+2017-08-01 01:47:06,417:20:Starting new HTTPS connection (1): cc-sample-bucket.s3.amazonaws.com
+2017-08-01 01:47:07,231:10:Waiting for 100 Continue response.
+2017-08-01 01:47:07,325:10:100 Continue response seen, now sending request body.
+2017-08-01 01:47:07,403:10:"PUT /test333.txt HTTP/1.1" 200 0
+2017-08-01 01:47:07,403:10:Response headers: {'x-amz-id-2': 'OS7ecaqkk00oacyhGnICKgQzEAN5+3XKBsiW4xu6VfyYJm6ZX7ZqHBWjFMK4ZAT6zUFZUXlF16M=', 'x-amz-request-id': 'BE5A60D2EB1EB448', 'date': 'Tue, 01 Aug 2017 06:47:09 GMT', 'etag': '"2c061e94e313bcf94a74c121d78c0cb2"', 'content-length': '0', 'server': 'AmazonS3'}
+2017-08-01 01:47:07,403:10:Response body:
+b''
+2017-08-01 01:47:07,403:10:Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x034ECBB0>
+2017-08-01 01:47:07,403:10:No retry needed.
+2017-08-01 01:47:07,403:10:Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x035B2CB0>>
+2017-08-01 01:47:07,403:10:Releasing acquire 0/None
+2017-08-01 01:47:07,403:10:True
+2017-08-01 13:03:42,491:10:Looking for credentials via: env
+2017-08-01 13:03:42,506:10:Looking for credentials via: assume-role
+2017-08-01 13:03:42,506:10:Looking for credentials via: shared-credentials-file
+2017-08-01 13:03:42,506:20:Found credentials in shared credentials file: ~/.aws/credentials
+2017-08-01 13:03:42,522:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\endpoints.json
+2017-08-01 13:03:42,709:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\s3\2006-03-01\service-2.json
+2017-08-01 13:03:42,803:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\_retry.json
+2017-08-01 13:03:42,803:10:Registering retry handlers for service: s3
+2017-08-01 13:03:42,819:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x03D26FA8>
+2017-08-01 13:03:42,819:10:Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x010BAF18>
+2017-08-01 13:03:43,310:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x03D26E88>
+2017-08-01 13:03:43,310:10:The s3 config key is not a dictionary type, ignoring its value of: None
+2017-08-01 13:03:43,326:10:Setting s3 timeout as (60, 60)
+2017-08-01 13:03:43,326:10:Defaulting to S3 virtual host style addressing with path style addressing fallback.
+2017-08-01 13:11:41,412:10:Looking for credentials via: env
+2017-08-01 13:11:41,412:10:Looking for credentials via: assume-role
+2017-08-01 13:11:41,412:10:Looking for credentials via: shared-credentials-file
+2017-08-01 13:11:41,416:20:Found credentials in shared credentials file: ~/.aws/credentials
+2017-08-01 13:11:41,416:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\endpoints.json
+2017-08-01 13:11:41,492:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\s3\2006-03-01\service-2.json
+2017-08-01 13:11:41,508:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\_retry.json
+2017-08-01 13:11:41,508:10:Registering retry handlers for service: s3
+2017-08-01 13:11:41,516:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x04105FA8>
+2017-08-01 13:11:41,516:10:Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0376AF18>
+2017-08-01 13:11:41,576:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x04105E88>
+2017-08-01 13:11:41,576:10:The s3 config key is not a dictionary type, ignoring its value of: None
+2017-08-01 13:11:41,584:10:Setting s3 timeout as (60, 60)
+2017-08-01 13:11:41,584:10:Defaulting to S3 virtual host style addressing with path style addressing fallback.
+2017-08-01 13:11:41,588:10:Acquiring 0
+2017-08-01 13:11:41,588:10:UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x043A9370>}) about to wait for the following futures []
+2017-08-01 13:11:41,588:10:UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x043A9370>}) done waiting for dependent futures
+2017-08-01 13:11:41,592:10:Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x043A9370>}) with kwargs {'client': <botocore.client.S3 object at 0x042D4950>, 'config': <boto3.s3.transfer.TransferConfig object at 0x04382D10>, 'osutil': <s3transfer.utils.OSUtils object at 0x04382C70>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x04382F30>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x043A9370>}
+2017-08-01 13:11:41,592:10:Submitting task PutObjectTask(transfer_id=0, {'bucket': 'biofreak', 'key': 'test333.txt', 'extra_args': {'ServerSideEncryption': 'AES256'}}) to executor <s3transfer.futures.BoundedExecutor object at 0x04382F30> for transfer request: 0.
+2017-08-01 13:11:41,592:10:Acquiring 0
+2017-08-01 13:11:41,592:10:PutObjectTask(transfer_id=0, {'bucket': 'biofreak', 'key': 'test333.txt', 'extra_args': {'ServerSideEncryption': 'AES256'}}) about to wait for the following futures []
+2017-08-01 13:11:41,592:10:Releasing acquire 0/None
+2017-08-01 13:11:41,592:10:PutObjectTask(transfer_id=0, {'bucket': 'biofreak', 'key': 'test333.txt', 'extra_args': {'ServerSideEncryption': 'AES256'}}) done waiting for dependent futures
+2017-08-01 13:11:41,592:10:Executing task PutObjectTask(transfer_id=0, {'bucket': 'biofreak', 'key': 'test333.txt', 'extra_args': {'ServerSideEncryption': 'AES256'}}) with kwargs {'client': <botocore.client.S3 object at 0x042D4950>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x043A9510>, 'bucket': 'biofreak', 'key': 'test333.txt', 'extra_args': {'ServerSideEncryption': 'AES256'}}
+2017-08-01 13:11:41,596:10:Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x04142F60>
+2017-08-01 13:11:41,596:10:Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x04142930>
+2017-08-01 13:11:41,596:10:Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x04146348>
+2017-08-01 13:11:41,596:10:Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x041428E8>
+2017-08-01 13:11:41,596:10:Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x04382CB0>>
+2017-08-01 13:11:41,596:10:Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x041426F0>
+2017-08-01 13:11:41,596:10:Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x041428A0>
+2017-08-01 13:11:41,612:10:Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x04142B70>
+2017-08-01 13:11:41,612:10:Adding expect 100 continue header to request.
+2017-08-01 13:11:41,612:10:Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x04382CB0>>
+2017-08-01 13:11:41,612:10:Making request for OperationModel(name=PutObject) (verify_ssl=True) with params: {'url_path': '/biofreak/test333.txt', 'query_string': {}, 'method': 'PUT', 'headers': {'x-amz-server-side-encryption': 'AES256', 'User-Agent': 'Boto3/1.4.4 Python/3.6.1 Windows/8.1 Botocore/1.5.54', 'Content-MD5': 'LAYelOMTvPlKdMEh14wMsg==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x043A9510>, 'url': 'https://s3.amazonaws.com/biofreak/test333.txt', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x042D4890>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'biofreak'}}}
+2017-08-01 13:11:41,616:10:Event request-created.s3.PutObject: calling handler <function disable_upload_callbacks at 0x04348CD8>
+2017-08-01 13:11:41,616:10:Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x042D4BF0>>
+2017-08-01 13:11:41,616:10:Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x04142660>
+2017-08-01 13:11:41,616:10:Event before-sign.s3.PutObject: calling handler <function fix_s3_host at 0x04037078>
+2017-08-01 13:11:41,616:10:Checking for DNS compatible bucket for: https://s3.amazonaws.com/biofreak/test333.txt
+2017-08-01 13:11:41,616:10:URI updated to: https://biofreak.s3.amazonaws.com/test333.txt
+2017-08-01 13:11:41,616:10:Calculating signature using hmacv1 auth.
+2017-08-01 13:11:41,616:10:HTTP request method: PUT
+2017-08-01 13:11:41,616:10:StringToSign:
+PUT
+LAYelOMTvPlKdMEh14wMsg==
+
+Tue, 01 Aug 2017 18:11:41 GMT
+x-amz-server-side-encryption:AES256
+/biofreak/test333.txt
+2017-08-01 13:11:41,648:10:Event request-created.s3.PutObject: calling handler <function enable_upload_callbacks at 0x04348D20>
+2017-08-01 13:11:41,736:10:Sending http request: <PreparedRequest [PUT]>
+2017-08-01 13:11:41,736:20:Starting new HTTPS connection (1): biofreak.s3.amazonaws.com
+2017-08-01 13:11:43,310:10:Waiting for 100 Continue response.
+2017-08-01 13:11:43,478:10:100 Continue response seen, now sending request body.
+2017-08-01 13:11:43,534:10:"PUT /test333.txt HTTP/1.1" 200 0
+2017-08-01 13:11:43,534:10:Response headers: {'x-amz-id-2': 'axoqFjfBccNfLTIxS9LFevMW3ACLFRrdtaovmTRwkXvy04alcRj6aauXHRy2KpoOtbRovb46TDM=', 'x-amz-request-id': '4128B15DC671EA78', 'date': 'Tue, 01 Aug 2017 18:11:46 GMT', 'x-amz-server-side-encryption': 'AES256', 'etag': '"2c061e94e313bcf94a74c121d78c0cb2"', 'content-length': '0', 'server': 'AmazonS3'}
+2017-08-01 13:11:43,534:10:Response body:
+b''
+2017-08-01 13:11:43,538:10:Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x042BCBB0>
+2017-08-01 13:11:43,538:10:No retry needed.
+2017-08-01 13:11:43,538:10:Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x04382CB0>>
+2017-08-01 13:11:43,538:10:Releasing acquire 0/None
+2017-08-01 13:11:43,538:10:True
+2017-08-01 19:05:05,520:10:Looking for credentials via: env
+2017-08-01 19:05:05,520:10:Looking for credentials via: assume-role
+2017-08-01 19:05:05,520:10:Looking for credentials via: shared-credentials-file
+2017-08-01 19:05:05,520:20:Found credentials in shared credentials file: ~/.aws/credentials
+2017-08-01 19:05:05,535:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\endpoints.json
+2017-08-01 19:05:06,285:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\s3\2006-03-01\service-2.json
+2017-08-01 19:05:06,365:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\_retry.json
+2017-08-01 19:05:06,381:10:Registering retry handlers for service: s3
+2017-08-01 19:05:06,381:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x03F75FA8>
+2017-08-01 19:05:06,381:10:Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x011DAF18>
+2017-08-01 19:05:07,115:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x03F75E88>
+2017-08-01 19:05:07,115:10:The s3 config key is not a dictionary type, ignoring its value of: None
+2017-08-01 19:05:07,131:10:Setting s3 timeout as (60, 60)
+2017-08-01 19:05:07,131:10:Defaulting to S3 virtual host style addressing with path style addressing fallback.
+2017-08-01 19:06:07,927:10:Looking for credentials via: env
+2017-08-01 19:06:07,927:10:Looking for credentials via: assume-role
+2017-08-01 19:06:07,927:10:Looking for credentials via: shared-credentials-file
+2017-08-01 19:06:07,927:20:Found credentials in shared credentials file: ~/.aws/credentials
+2017-08-01 19:06:07,943:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\endpoints.json
+2017-08-01 19:06:08,068:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\s3\2006-03-01\service-2.json
+2017-08-01 19:06:08,115:10:Loading JSON file: C:\Users\vamshi\AppData\Roaming\Python\Python36\site-packages\botocore\data\_retry.json
+2017-08-01 19:06:08,115:10:Registering retry handlers for service: s3
+2017-08-01 19:06:08,130:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x035F5FA8>
+2017-08-01 19:06:08,130:10:Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x00AEAF18>
+2017-08-01 19:06:08,209:10:Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x035F5E88>
+2017-08-01 19:06:08,209:10:The s3 config key is not a dictionary type, ignoring its value of: None
+2017-08-01 19:06:08,287:10:Setting s3 timeout as (60, 60)
+2017-08-01 19:06:08,287:10:Defaulting to S3 virtual host style addressing with path style addressing fallback.
+2017-08-01 19:06:08,287:10:Acquiring 0
+2017-08-01 19:06:08,287:10:UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x03899350>}) about to wait for the following futures []
+2017-08-01 19:06:08,287:10:UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x03899350>}) done waiting for dependent futures
+2017-08-01 19:06:08,302:10:Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x03899350>}) with kwargs {'client': <botocore.client.S3 object at 0x037C4930>, 'config': <boto3.s3.transfer.TransferConfig object at 0x03872CF0>, 'osutil': <s3transfer.utils.OSUtils object at 0x03872C50>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x03872F10>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x03899350>}
+2017-08-01 19:06:08,302:10:Submitting task PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x03872F10> for transfer request: 0.
+2017-08-01 19:06:08,302:10:Acquiring 0
+2017-08-01 19:06:08,302:10:PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) about to wait for the following futures []
+2017-08-01 19:06:08,302:10:Releasing acquire 0/None
+2017-08-01 19:06:08,302:10:PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) done waiting for dependent futures
+2017-08-01 19:06:08,302:10:Executing task PutObjectTask(transfer_id=0, {'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x037C4930>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x038994F0>, 'bucket': 'cc-sample-bucket', 'key': 'test333.txt', 'extra_args': {}}
+2017-08-01 19:06:08,302:10:Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x03632F60>
+2017-08-01 19:06:08,302:10:Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x03632930>
+2017-08-01 19:06:08,302:10:Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x03636348>
+2017-08-01 19:06:08,302:10:Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x036328E8>
+2017-08-01 19:06:08,302:10:Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x03872C90>>
+2017-08-01 19:06:08,302:10:Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x036326F0>
+2017-08-01 19:06:08,302:10:Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x036328A0>
+2017-08-01 19:06:08,380:10:Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x03632B70>
+2017-08-01 19:06:08,380:10:Adding expect 100 continue header to request.
+2017-08-01 19:06:08,380:10:Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x03872C90>>
+2017-08-01 19:06:08,380:10:Making request for OperationModel(name=PutObject) (verify_ssl=True) with params: {'url_path': '/cc-sample-bucket/test333.txt', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.4.4 Python/3.6.1 Windows/8.1 Botocore/1.5.54', 'Content-MD5': 'LAYelOMTvPlKdMEh14wMsg==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x038994F0>, 'url': 'https://s3.amazonaws.com/cc-sample-bucket/test333.txt', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x037C4870>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'cc-sample-bucket'}}}
+2017-08-01 19:06:08,380:10:Event request-created.s3.PutObject: calling handler <function disable_upload_callbacks at 0x03838CD8>
+2017-08-01 19:06:08,380:10:Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x037C4BD0>>
+2017-08-01 19:06:08,380:10:Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x03632660>
+2017-08-01 19:06:08,380:10:Event before-sign.s3.PutObject: calling handler <function fix_s3_host at 0x03527078>
+2017-08-01 19:06:08,380:10:Checking for DNS compatible bucket for: https://s3.amazonaws.com/cc-sample-bucket/test333.txt
+2017-08-01 19:06:08,380:10:URI updated to: https://cc-sample-bucket.s3.amazonaws.com/test333.txt
+2017-08-01 19:06:08,380:10:Calculating signature using hmacv1 auth.
+2017-08-01 19:06:08,380:10:HTTP request method: PUT
+2017-08-01 19:06:08,380:10:StringToSign:
+PUT
+LAYelOMTvPlKdMEh14wMsg==
+
+Wed, 02 Aug 2017 00:06:08 GMT
+/cc-sample-bucket/test333.txt
+2017-08-01 19:06:08,427:10:Event request-created.s3.PutObject: calling handler <function enable_upload_callbacks at 0x03838D20>
+2017-08-01 19:06:08,521:10:Sending http request: <PreparedRequest [PUT]>
+2017-08-01 19:06:08,521:20:Starting new HTTPS connection (1): cc-sample-bucket.s3.amazonaws.com
+2017-08-01 19:06:11,047:10:Waiting for 100 Continue response.
+2017-08-01 19:06:11,156:10:100 Continue response seen, now sending request body.
+2017-08-01 19:06:11,312:10:"PUT /test333.txt HTTP/1.1" 200 0
+2017-08-01 19:06:11,312:10:Response headers: {'x-amz-id-2': 'jeDLl1oFg8HxnhBJCmTbgTqvSlK4zhu2Iv3vGF3vRv9Yl8YpFCPhfVjje5VMoxVkXe1K5rNFFYI=', 'x-amz-request-id': '0CBD7D3C2EE601CC', 'date': 'Wed, 02 Aug 2017 00:06:13 GMT', 'etag': '"2c061e94e313bcf94a74c121d78c0cb2"', 'content-length': '0', 'server': 'AmazonS3'}
+2017-08-01 19:06:11,312:10:Response body:
+b''
+2017-08-01 19:06:11,312:10:Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x037ADB90>
+2017-08-01 19:06:11,312:10:No retry needed.
+2017-08-01 19:06:11,312:10:Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x03872C90>>
+2017-08-01 19:06:11,312:10:Releasing acquire 0/None
+2017-08-01 19:06:11,312:10:True
